@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cake Lab</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Get a Quote</h1>
+        <p>
+          All our cakes are freshly made to order, using only the highest
+          quality ingredients. To request a quote for a cake, please fill out
+          the form below and we will be in touch with you shortly.
+        </p>
+      </header>
+      <main>
+        <form action="" method="POST">
+          <fieldset>
+            <label for="name"
+              >Name: <input type="text" id="name" name="name" required
+            /></label>
+            <label for="email"
+              >Email: <input type="email" id="email" name="email"
+            /></label>
+            <label for="phone-number"
+              >Contact number:
+              <input type="text" id="phone-number" name="phone-number"
+            /></label>
+            <label for="event-date"
+              >Date of the Event:
+              <input type="date" id="event-date" name="event-date"
+            /></label>
+            <label for="event-type"
+              >Type of Event:
+              <input
+                type="text"
+                placeholder=" Birthday"
+                id="event-type"
+                name="event-type"
+            /></label>
+            <p>Collection or Delivery:</p>
+            <label for="collection">
+              <input
+                type="radio"
+                id="collection"
+                name="delivery-collection"
+                class="inline"
+              />
+              Collection
+            </label>
+            <label for="delivery"
+              ><input
+                type="radio"
+                id="delivery"
+                name="delivery-collection"
+                checked
+                class="inline"
+              />
+              Delivery</label
+            >
+          </fieldset>
+          <fieldset>
+            <label for="layer"
+              >Select the cake layer:
+              <select name="layer" id="layer">
+                <option value="yellow" selected>Yellow</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="marble">Marble</option>
+                <option value="red velvet">Red Velvet</option>
+              </select></label
+            >
+            <label for="filling"
+              >Select the filling:
+              <select name="filling" id="filling">
+                <option value="buttercream-vanilla">Buttercream Vanilla</option>
+                <option value="buttercream-chocolate">
+                  Buttercream Chocolate
+                </option>
+                <option value="cream-cheese">Cream Cheese</option>
+                <option value="strawberry" selected>Strawberry</option>
+                <option value="lemon-custard">Lemon custard</option>
+                <option value="buttercream-mocha">Buttercream Mocha</option>
+              </select></label
+            >
+            <p>Decoration:</p>
+            <label for="sprinkles"
+              ><input
+                type="checkbox"
+                id="sprinkles"
+                value="Sprinkles"
+                class="inline"
+                checked
+              />
+              Sprinkles</label
+            >
+            <label for="glaze"
+              ><input
+                type="checkbox"
+                id="glaze"
+                value="Mirror glaze"
+                class="inline"
+              />
+              Mirror glaze</label
+            >
+            <label for="fondant">
+              <input
+                type="checkbox"
+                id="fondant"
+                value="Fondant"
+                class="inline"
+              />
+              Fondant</label
+            >
+            <label for="cake-pic">
+              Upload an image of a cake you have in mind:
+              <input
+                type="file"
+                id="cake-pic"
+                accept="image/png, image/jpg"
+                name="cake-picture"
+              />
+            </label>
+
+            <label for="special"
+              >Do you have any dietary requirements or special requests?
+              <textarea
+                name="special"
+                class="special"
+                cols="20"
+                rows="2"
+                placeholder=" e.g. lactose free, gluten free"
+              ></textarea>
+            </label>
+          </fieldset>
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
